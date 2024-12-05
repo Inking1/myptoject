@@ -1,4 +1,4 @@
-
+let notes =[];
  function Ajouter() {
     const alpha = document.getElementsByName('text')[0]; 
     const warning = document.getElementById('nonvalider');
@@ -10,10 +10,20 @@
         erreur.style.display = 'none';  
        
     } else {
-        warning.style.display = 'none'; 
-        erreur.style.display = 'block'; 
+       notes.push(val);
+       alert("Notes ajoutees");
+       alpha.value = '';
+        
     }
+
+} 
+function Afficher(){ 
+    
+
+
+
 }
+
 
 
 
