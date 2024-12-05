@@ -18,7 +18,41 @@ let notes =[];
 
 } 
 function Afficher(){ 
+    const erreur = document.getElementById('casErreur');
+    const resultat = document.getElementById('resultat'); 
+
     
+
+
+        if(notes.length == 0){ 
+            erreur.style.display="block"
+            return;
+        }
+        let occurences = notes.length; 
+        let somme =0 ;
+        let max = -66; 
+        let notessup12=[]; 
+        for( let i = 0 ; i < notes.length ; i++){ 
+            if(notes[i] > max){ 
+                max = notes[i] ;
+            }
+            if(notes[i]>=12){ 
+                notessup12.push(notes[i]);
+            }
+
+
+        }
+        let moyenne = (somme / occurences) ; 
+
+        resultat.innerHTML = `
+             <h3> Nombre de notes : ${occurences}</h3><br>
+                <h3> Moyenne de notes:${moyenne}</h3><br>
+                <h3> Meileur note :${max}</h3><br>
+                <h3> Notes superieures ou egales a 12 :${notessup12(", ")}</h3>
+
+        
+        
+        `;
 
 
 
