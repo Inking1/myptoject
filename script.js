@@ -1,6 +1,6 @@
 
  function Ajouter() {
-    const alpha = document.getElementsByTagName('input')[1]; 
+    const alpha = document.getElementsByName('text')[0]; 
     const warning = document.getElementById('nonvalider');
     const erreur = document.getElementById('casErreur');
     const val = parseFloat(alpha.value); 
@@ -14,6 +14,35 @@
         erreur.style.display = 'block'; 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
