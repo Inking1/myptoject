@@ -82,23 +82,26 @@ body{
 #Resultat{ 
     background-color: rgb(153, 236, 153);
     height: auto; 
-    display: flex;
-    display: none; /*ttttttttttttttttttttttttttttttttttttttttttttttttt*/
-    
+   
+    display: none; /*ttttttttttttttttttttttttttttttttttttttttttttttttt*/ 
+    margin-bottom: 20px;
+
 }
 #resultat{ 
-   
+    
     margin-left: 2px;
 }
 #Resultat h3{ 
   padding-left: 30px;
 }
  #Resultat::before{ 
+    position: absolute;
     content: ""; 
     display: block;
     width: 10px;
-    height: 150px;
-    background-color: green;
+    max-height: 140px;
+    background-color: green; 
+    /* here 3la wed dik la bar mabach tkade  */
     
 
 }
@@ -120,4 +123,34 @@ body{
         display: none;
         color: rgb(18, 18, 46);
 
-} 
+}
+ /*valier#####################  */
+ #valider{ 
+    background-color: rgb(153, 236, 153);
+    height: 50px; 
+    
+    display: flex;
+    justify-content: space-between;
+    display:block;
+
+
+
+ }
+ #valider h3{ 
+     color:  red;
+     padding-left: 10px;
+    
+}
+#valider::before{ 
+    content: "" ;
+    width: 8px; 
+    background-color: green;
+    display: block;
+    height: 100%;
+    position: relative;
+    
+    
+    
+    
+
+}
