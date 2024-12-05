@@ -17,34 +17,6 @@
 
 
 
-function Afficher(){ 
-    const erreur = document.getElementById('casErreur'); 
-    const res = document.getElementById('Resultat'); 
-    const x = document.getElementById('input'); 
-    const val = parseFloat(x.value) ;  
-    let compteur = 0 ;
-    let Somme = 0 ; 
-    let max = -666 ;
-      if(val > 0 || val < 20) { 
-                compteur++; 
-                Somme = Somme +val ; 
-                if( max < val){ 
-                    max = val ;
-                } 
-                erreur.style.display="none"; 
-                res.style.display='block';
-                /*let moyenne = somme / compteur ;  
-                erreur.style.display = 'none';
-      const resultmessage = ' Nombre de notes ajoutées : ${compteur}<br>Note maximale : ${max}<br>Moyenne : ${moyenne}` ';
-      document.getElementById('Resultat').innerHTML = resultmessage; */
-      
-      } 
-      
-
-
-
-}
-
 
 
 function turnoff() { 
