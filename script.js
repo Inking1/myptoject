@@ -1,6 +1,6 @@
 
  function Ajouter() {
-    const alpha = document.getElementsByTagName('input')[]; 
+    const alpha = document.getElementsByTagName('input')[1]; 
     const warning = document.getElementById('nonvalider');
     const erreur = document.getElementById('casErreur');
     const val = parseFloat(alpha.value); 
