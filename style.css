@@ -125,32 +125,13 @@ body{
 
 }
  /*valier#####################  */
- #valider{ 
-    background-color: rgb(153, 236, 153);
-    height: 50px; 
-    
-    display: flex;
-    justify-content: space-between;
-    display:block;
-
-
-
- }
+#valider{ 
+    display: none;
+}
  #valider h3{ 
      color:  red;
      padding-left: 10px;
     
 }
-#valider::before{ 
-    content: "" ;
-    width: 8px; 
-    background-color: green;
-    display: block;
-    height: 100%;
-    position: relative;
-    
-    
-    
-    
 
-}
+

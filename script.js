@@ -9,6 +9,7 @@ let notes =[];
     if (val < 0 || val > 20) {
         warning.style.display = 'block'; 
         erreur.style.display = 'none';  
+        valider.style.display = 'none';  
        
     } else{
        notes.push(val);
