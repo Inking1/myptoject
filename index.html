@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body> 
+    <div id="lamp_on_off"> 
+
+        <input type="checkbox" name="lamp" id="lamp">
+    
+     <label for="lamp"><i class="fa-solid fa-lightbulb"></i></label> 
+
+    </div>
+    <section id="SectionA">
+        <h1> Gestion des Notes</h1> 
+        <div id="container">
+           <p>  Entrer des notes entre 0 et 20 dans le champ ci-dessous. Cliquer sur<br>
+            'ajouter la notes' pou enregister chaque note .une fois termine, Cliquer sur<br> 
+            "afficher le resultat".</p> 
+            <div id="row"> 
+            <input type="text"  placeholder="Entrer une note" name="text">
+            <button id="ajouter" onclick="Ajouter()"> Ajouter la note</button>
+            <button id="afficher" onclick="Afficher()">Afficher le resultat</button>
+        </div> 
+         <div id="casErreur">
+                <h3>Aucune note saisie</h3> 
+
+         </div> 
+         <div id="Resultat">
+            <div id="resultat"> 
+                <h3> Nombre de notes :</h3><br>
+                <h3> Moyenne de notes:</h3><br>
+                <h3> Meileur note :</h3><br>
+                <h3> Notes superieures ou egales a 12 :</h3>
+            </div>
+        </div>
+
+        </div> 
+        <div id="nonvalider"> 
+            <h3> veuillez entrer une note valide entre 0 et 20 </h3>
+        </div>
+
+
+
+
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

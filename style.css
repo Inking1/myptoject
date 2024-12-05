@@ -1,0 +1,123 @@
+*{ 
+    margin: 0;
+    padding: 0;
+
+}
+body{ 
+    background-color: whitesmoke;
+    
+
+}
+#SectionA{ 
+    position: relative;
+    top: 30vh;
+    margin:  0 auto;
+    width: 70%;
+    height: auto;  /*auto */
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+#SectionA h1 { 
+    color: green; 
+    margin-bottom: 10px;
+
+}  
+#SectionA   #ajouter , #afficher  { 
+    padding: 6px;
+    background-color: green;
+    color: white;
+    border-radius: 12px; 
+    border: none;
+} 
+
+#SectionA   #ajouter:hover { 
+    background-color: rgb(107, 148, 107);
+    color: rgb(12, 11, 11);
+
+
+}
+#SectionA   #afficher:hover { 
+    background-color: rgb(107, 148, 107);
+    color: rgb(12, 11, 11);
+
+
+}
+#container{ 
+    background-color: white; 
+    width: 90%;
+    border-radius: 12px;
+    
+    
+}
+#container p , input  { 
+    margin: 6px;
+}
+
+#casErreur{ 
+    background-color: rgb(153, 236, 153);
+    height: 50px; 
+    margin: 20px 0 ;
+    display: flex;
+    
+}
+#casErreur h3{ 
+    padding-left: 6px ;
+}
+#casErreur::before{ 
+    content: "" ;
+    width: 8px; 
+    background-color: green;
+    display: block;
+    height: 100%;
+   
+    
+    
+
+}
+#Resultat{ 
+    background-color: rgb(153, 236, 153);
+    height: auto; 
+    display: flex;
+    display: none; /*ttttttttttttttttttttttttttttttttttttttttttttttttt*/
+    
+}
+#resultat{ 
+   
+    margin-left: 2px;
+}
+#Resultat h3{ 
+  padding-left: 30px;
+}
+ #Resultat::before{ 
+    content: ""; 
+    display: block;
+    width: 10px;
+    height: 150px;
+    background-color: green;
+    
+
+}
+#nonvalider { 
+    height: auto; 
+    color: red;
+    display: none; /*ttttttttttttttttttttttttttttttttttttttttttttttttt*/
+} 
+
+#lamp_on_off{ 
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#lamp_on_off  input { 
+        display: none;
+        color: rgb(18, 18, 46);
+
+} 
