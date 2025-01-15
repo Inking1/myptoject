@@ -10,11 +10,11 @@ body{
 }
 #SectionA{ 
     position: relative;
-    top: 30vh;
+    top: 20vh;
     margin:  0 auto;
     width: 70%;
     height: auto;  /*auto */
-    border: 1px black solid;
+    border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,15 +94,13 @@ body{
 #Resultat h3{ 
   padding-left: 30px;
 }
- #Resultat::before{ 
-    position: absolute;
-    content: ""; 
-    display: block;
-    width: 10px;
-    max-height: 140px;
-    background-color: green; 
-    /* here 3la wed dik la bar mabach tkade  */
-    
+#resultat_container::before{ 
+    content: "";
+    background-color: green;
+    width: 6px;
+    height: 13px;
+   display: block;
+   
 
 }
 #nonvalider { 

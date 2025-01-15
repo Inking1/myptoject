@@ -15,13 +15,14 @@ let notes =[];
        notes.push(val);
     //    alert("Notes ajoutees");
        valider.style.display = "block"
+       alpha.focus(); //donne la main a l'utilsateur de remettre les valeurs automatique 
        alpha.value = '';
 
         
     }
 
 } 
-
+//classList.toogle/.add(); pour ajouter un style ou bien fair appele de css
         function Afficher() {
             const erreur = document.getElementById('casErreur');
             const resultat = document.getElementById('Resultat');
@@ -39,8 +40,9 @@ let notes =[];
             let occurences = notes.length;
             let somme = 0;
             let max = notes[0]; 
-            let notessup12 = [];
-        
+            let notessup12 = []; 
+            notes.join
+            // notessuper = notes.filter(n>>n=>12) : vers le tableau et reconstruit les elements d tableau et put it f n et faire la condition 
             for (let i = 0; i < notes.length; i++) {
                 somme += notes[i];
                 if (notes[i] > max) {
